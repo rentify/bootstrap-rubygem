@@ -41,11 +41,11 @@ end
 desc 'Dumps output to a CSS file for testing'
 task :debug do
   require 'sass'
-  require './lib/bootstrap'
+  require './lib/bootstrap_4'
   require 'term/ansicolor'
   require 'autoprefixer-rails'
-  path = Bootstrap.stylesheets_path
-  %w(_bootstrap _bootstrap-flex _bootstrap-reboot _bootstrap-grid).each do |file|
+  path = Bootstrap4.stylesheets_path
+  %w(_bootstrap_4 _bootstrap-flex _bootstrap-reboot _bootstrap-grid).each do |file|
     engine = Sass::Engine.for_file("#{path}/#{file}.scss", syntax: :scss, load_paths: [path])
     out = File.join('tmp', "#{file[1..-1]}.css")
     css = engine.render

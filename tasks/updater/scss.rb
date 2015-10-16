@@ -20,7 +20,7 @@ class Updater
         FileUtils.mv from, to
         # As we moved the files, adjust imports accordingly (except for bootstrap-flex that imports the main bootstrap).
         unless 'bootstrap-flex' == name
-          File.write to, File.read(to).gsub(/ "/, ' "bootstrap/')
+          File.write to, File.read(to).gsub(/ "/, ' "bootstrap_4/')
         end
       end
 

@@ -1,3 +1,4 @@
+require 'bootstrap_4'
 module Bootstrap
   module Rails
     class Engine < ::Rails::Engine

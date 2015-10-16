@@ -2,9 +2,9 @@
 //
 // Includes only Normalize and our custom Reboot reset.
 
-@import "bootstrap/variables";
-@import "bootstrap/mixins/hover";
-@import "bootstrap/mixins/tab-focus";
+@import "bootstrap_4/variables";
+@import "bootstrap_4/mixins/hover";
+@import "bootstrap_4/mixins/tab-focus";
 
-@import "bootstrap/normalize";
-@import "bootstrap/reboot";
+@import "bootstrap_4/normalize";
+@import "bootstrap_4/reboot";

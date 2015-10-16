@@ -1,5 +1,5 @@
-require 'bootstrap/version'
-module Bootstrap
+require 'bootstrap_4/version'
+module Bootstrap4
   class << self
     # Inspired by Kaminari
     def load!
@@ -54,7 +54,7 @@ module Bootstrap
 
     def register_compass_extension
       ::Compass::Frameworks.register(
-          'bootstrap',
+          'bootstrap_4',
           :version               => Bootstrap::VERSION,
           :path                  => gem_path,
           :stylesheets_directory => stylesheets_path,
@@ -63,7 +63,7 @@ module Bootstrap
     end
 
     def register_rails_engine
-      require 'bootstrap/engine'
+      require 'bootstrap_4/engine'
     end
 
     def register_sprockets
@@ -73,4 +73,4 @@ module Bootstrap
   end
 end
 
-Bootstrap.load!
+Bootstrap4.load!
