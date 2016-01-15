@@ -1,14 +1,14 @@
 /*!
- * Bootstrap v4.0.0-alpha (http://getbootstrap.com)
+ * bootstrap_4 v4.0.0-alpha.2 (http://getbootstrap_4.com)
  * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/twbs/bootstrap_4/blob/master/LICENSE)
  */
 
- // Core variables and mixins
+// Core variables and mixins
 @import "bootstrap_4/variables";
 @import "bootstrap_4/mixins";
 
-// // Reset and dependencies
+// Reset and dependencies
 @import "bootstrap_4/normalize";
 @import "bootstrap_4/print";
 
@@ -22,7 +22,7 @@
 @import "bootstrap_4/forms";
 @import "bootstrap_4/buttons";
 
-// // Components
+// Components
 @import "bootstrap_4/animation";
 @import "bootstrap_4/dropdown";
 @import "bootstrap_4/button-group";
@@ -51,5 +51,6 @@
 
 // Utility classes
 @import "bootstrap_4/utilities";
+@import "bootstrap_4/utilities-background";
 @import "bootstrap_4/utilities-spacing";
 @import "bootstrap_4/utilities-responsive";
